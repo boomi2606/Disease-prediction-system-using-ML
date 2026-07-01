@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Prediction Result</title>
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Prediction Result</h1>
+
+<hr>
+
+<h3>Disease</h3>
+<p>{{ disease }}</p>
+
+<h3>Confidence</h3>
+<p>{{ confidence }} %</p>
+
+<h3>Medicines</h3>
+<p>{{ medicines }}</p>
+
+<h3>Recommendation</h3>
+<p>{{ recommendation }}</p>
+
+{% if critical == "Critical" or critical == "Yes" %}
+
+<div class="critical-box">
+
+⚠ Critical Condition <br>
+Consult Doctor Immediately
+
+</div>
+
+{% endif %}
+
+<br>
+
+<a href="/dashboard">
+<button>
+Predict Again
+</button>
+</a>
+
+</div>
+
+</body>
+</html>

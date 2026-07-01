@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container-wide">
+
+<h2>Welcome {{ username }}</h2>
+
+<h3>Select Symptoms</h3>
+
+<form action="/predict" method="POST">
+
+<div class="symptom-grid">
+
+{% for symptom in symptoms %}
+
+<label>
+
+<input type="checkbox"
+       name="symptoms"
+       value="{{ symptom }}">
+
+{{ symptom.replace('_',' ') }}
+
+</label>
+
+{% endfor %}
+
+</div>
+
+<button type="submit">
+Predict Disease
+</button>
+
+</form>
+
+<br>
+
+<a href="/logout">
+<button>
+Logout
+</button>
+</a>
+
+</div>
+
+</body>
+</html>

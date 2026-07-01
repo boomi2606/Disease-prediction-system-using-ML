@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.container-wide{
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+h1,h2,h3{
+    color:#1e293b;
+    margin-bottom:15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.symptom-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    max-height:500px;
+    overflow-y:auto;
+    margin-bottom:20px;
+    padding:15px;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+}
+
+.symptom-grid label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:8px;
+    border-radius:6px;
+    transition:0.2s;
+}
+
+.symptom-grid label:hover{
+    background:#f1f5f9;
+}
+
+input[type="checkbox"]{
+    transform:scale(1.2);
+}
+
+.result-card{
+    background:#f8fafc;
+    padding:20px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.result-card p{
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+.critical-box{
+    margin-top:15px;
+    background:#fee2e2;
+    color:#b91c1c;
+    padding:15px;
+    border-radius:10px;
+    font-weight:bold;
+    border-left:5px solid red;
+}
+
+.msg{
+    color:red;
+    margin-bottom:15px;
+}
+
+a{
+    text-decoration:none;
+}

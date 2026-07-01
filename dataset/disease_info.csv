@@ -1,0 +1,26 @@
+Disease,Medicines,Recommendation,Critical
+Flu,Paracetamol;Cetirizine,Take Rest and Drink Plenty of Fluids,No
+Common_Cold,Cetirizine,Rest and Drink Warm Water,No
+COVID19,Paracetamol;Vitamin C,Isolate and Consult Doctor,Yes
+Dengue,Paracetamol;ORS,Increase Fluid Intake and Monitor Platelets,Yes
+Malaria,Antimalarial Drugs,Visit Doctor Immediately,Yes
+Typhoid,Antibiotics,Complete Medication Course,Yes
+Migraine,Ibuprofen,Rest in a Dark Quiet Room,No
+Pneumonia,Antibiotics,Consult Pulmonologist,Yes
+Asthma,Inhaler,Avoid Dust and Smoke,Yes
+Bronchitis,Cough Syrup,Hydration and Rest,No
+Hypertension,Amlodipine,Reduce Salt Intake and Exercise,Yes
+Diabetes,Metformin,Monitor Blood Sugar Levels,Yes
+Anemia,Iron Supplements,Increase Iron Rich Foods,No
+Food_Poisoning,ORS,Stay Hydrated,No
+Gastritis,Antacids,Avoid Spicy Food,No
+Arthritis,Pain Relievers,Regular Exercise and Weight Management,No
+Depression,Antidepressants,Seek Mental Health Support,Yes
+Anxiety_Disorder,Anxiolytics,Practice Relaxation Techniques,No
+Insomnia,Melatonin,Maintain Proper Sleep Schedule,No
+Conjunctivitis,Eye Drops,Avoid Touching Eyes,No
+Ear_Infection,Antibiotics,Consult ENT Specialist,No
+Kidney_Stone,Pain Relievers,Drink Plenty of Water,Yes
+UTI,Antibiotics,Increase Water Intake,No
+Skin_Allergy,Antihistamines,Avoid Allergens,No
+Heart_Disease,Aspirin,Immediate Medical Attention,Critical

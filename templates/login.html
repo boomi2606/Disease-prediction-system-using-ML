@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Disease Prediction System</h1>
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<p class="msg">{{ messages[0] }}</p>
+{% endif %}
+{% endwith %}
+
+<form method="POST">
+
+<input type="email"
+       name="email"
+       placeholder="Email"
+       required>
+
+<input type="password"
+       name="password"
+       placeholder="Password"
+       required>
+
+<button type="submit">
+Login
+</button>
+
+</form>
+
+<p>
+Don't have an account?
+<a href="/signup">Signup</a>
+</p>
+
+</div>
+
+</body>
+</html>
